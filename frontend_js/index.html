@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My ChatBox</title>
+
+    <!-- normal style css -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <!-- for socket -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.2.0/socket.io.js"
+      integrity="sha512-WL6WGKMPBiM9PnHRYIn5YEtq0Z8XP4fkVb4qy7PP4vhmYQErJ/dySyXuFIMDf1eEYCXCrQrMJfkNwKc9gsjTjA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <div id="main_div">
+      <h1 id="title">My ChatBox</h1>
+      <div id="chat_window">
+        <div id="output"></div>
+        <div id="feedback"></div>
+      </div>
+      <input
+        id="handle"
+        class="full_width"
+        placeholder="Enter Name"
+        type="text"
+      />
+      <input
+        id="message"
+        class="full_width"
+        placeholder="Enter Message"
+        type="text"
+      />
+      <button id="send" class="full_width">Send</button>
+    </div>
+
+    <!-- normal js file -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
